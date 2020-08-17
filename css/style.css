@@ -1,0 +1,521 @@
+
+li{ list-style: none; }
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+body{
+	width: 100%;
+	background: black;
+	color: white;
+	font-family: "Cutive Mono", "YuGothic", "meiryo", sans-serif;
+	font-size: 100%;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    padding: 30px 4% 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    transition: all .2s ease-out;
+}
+
+.logo{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.logo a:hover{
+    color: white;
+}
+
+
+nav{
+    margin: 0 0 0 auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	display: flex;
+}
+
+nav>ul>li {
+	margin: 0 0 0 15px;
+	font-size: 14px;
+}
+
+nav>ul>li>a{
+    opacity: 0.9;
+    color: white;
+}
+
+nav>ul>li>a:hover{
+    color: white;
+    opacity: 1;
+}
+
+
+
+/* mailアドレス */
+
+.mail{
+    transform: rotate(90deg);
+    position: fixed;
+    top: 450px;
+    right: 5px;
+    z-index: 100;
+}
+
+.mail-url{
+    color: white;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.mail-url:hover{
+    opacity: 1;
+    color: white;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: black;
+    height: 64px;
+    z-index: 100;
+}
+
+.footer-in{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: white;
+    font-size: 20px;
+}
+
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#top{
+    color: white;
+    height: 580px;
+    padding: 190px 0 110px 0;
+    text-align: center;
+    margin-bottom: 160px;
+}
+
+
+/* top-h1のアニメーション、scrollアイコンのアニメーション */
+
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+#top h1 { 
+    margin: 0 auto;
+	font: bold 20px Consolas, Monaco, monospace;
+	border-right: .1em solid white;
+	width: 16.5em; 
+	width: 12ch;
+	white-space: nowrap;
+	overflow: hidden;
+    animation: typing 5s steps(12, end), blink-caret .5s step-end infinite alternate;
+}
+
+.title-in{
+    padding: 100px 0 250px 0;
+}
+
+
+.scroll-icon{
+    margin: 0 auto;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-decoration: none;
+}
+
+.scroll-icon{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+.scroll-icon span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 1.5s infinite;
+    animation: sdb 3s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  @keyframes sdb {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+
+
+
+/* about */
+
+#about{
+    color: white;
+    padding: 80px 0 110px 0;
+    margin-bottom: 50px;
+}
+
+#about h2{
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.about_text{
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* sns */
+
+#sns{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px 0 100px 0;
+    margin-bottom: 50px;
+}
+
+.btn{
+    margin: 30px 0;
+}
+
+
+#sns h2{
+    margin: 40px 0;
+    width: 100%;
+}
+
+.card{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.card h3{
+    padding: 50px 0;
+}
+
+.btn{
+    color: white;
+    font-weight: bold;
+    border: none;
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.btn:hover{
+    color: white;
+    opacity: 1;
+}
+
+.sns-icon{
+    padding-right: 5px;
+}
+
+.btn-twitter{
+    background-color: #1DA1F2;
+    padding: 13px 26px;
+    font-weight: bold;
+}
+
+.btn-facebook{
+    background-color: #3B5998;
+    padding: 13px 26px;
+    font-weight: bold;
+}
+
+.btn-insta{
+    background-image: linear-gradient(-315deg,  #FFF800 0%, #FF1361 29%, #44107A 67%, #231557 100%);
+    padding: 13px 26px;
+}
+
+.btn-youtube{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.y_logo{
+    width: 100%;
+}
+
+.y-text{
+    padding-bottom: 30px;
+}
+
+/* blog */
+
+#blog{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px 0 100px 0;
+    margin-bottom: 30px;
+}
+
+#blog h2{
+    padding-top: 30px;
+    width: 100%;
+}
+
+#blog p{
+    padding:50px 0 50px 0;
+}
+
+.blog-card{
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+    margin: auto;
+    height: auto;
+    border: none;
+    opacity: 0.9;
+}
+
+.card-title{
+    font-size: 20px;
+}
+
+.card-text{
+    font-size: 15px;
+}
+
+.blog-card:hover{
+    opacity: 1;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.movie-blog{
+    padding-top: 40px;
+}
+
+.viet-blog{
+    padding-top: 50px;
+}
+
+.viet-blog-in{
+    padding-bottom: 30px;
+}
+
+a.button {
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+	padding: 15px 30px;
+    text-align: center;
+    color: white;
+	border: 1px solid #fff;
+	transition: all .3s ease-out;
+}
+a.button:hover {
+	color: #505050;
+	background-color: #fff;
+}
+
+/* contactform */
+
+#contact{
+    background-color: black;
+    color: white;
+    padding: 80px 0 100px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#contact h2{
+    color: white;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+.centered {
+  margin: 0 auto;
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.bottom-line {
+  border-bottom: 2px solid #c3c3c3;
+}
+::-webkit-resizer {
+  display: none;
+}
+
+#contact h1 {
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid #c3c3c3;
+  background-color: black;
+  box-shadow: 0px 0px 100px rgba(0,0,0,0.05);
+  color: white;
+  font-weight: 300;
+  width: 300px;
+  padding: 10px 0px 10px 0px;
+  letter-spacing: 4px;
+}
+section {
+  margin: 0 auto;
+  text-align: center;
+}
+.arrow-up {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 1px;
+  width: 0;
+  height: 0;
+  margin-top: 10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f7f7f7;
+}
+form#contact {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid #c3c3c3;
+  width: 300px;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+textarea#message {
+  min-height: 100px;
+  resize: vertical;
+  overflow: hidden;
+  border-bottom: 0px;
+}
+button#send {
+  text-transform: uppercase;
+  border-bottom: 2px solid #c3c3c3;
+  margin-top: 20px;
+  letter-spacing: 4px;
+}
+
+
+/* slide-bottomフェードイン用のCSS */
+.slide-bottom {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 2.0s 0.5s ease-out;
+  }
+
+/* 左からフェードイン */
+.slide-left {
+	opacity: 0;
+	transform: translate(-20px, 0);
+	transition: all 1s ease-out;
+ }
+
+/* 右からフェードイン */
+.slide-right {
+	opacity: 0;
+	transform: translate(20px, 0);
+	transition: all 1s ease-out;
+ }
+
+
+
+ /* メディアクエリmax896px */
+@media screen and (max-width: 896px){
+    .mail{
+        display: none;
+    }
+    #top h1{
+        font-size: medium;
+    }
+    .container{
+        width: 60%;
+    }
+    #about h2{
+        border-bottom: 2px solid white;
+    }
+    #sns h2{
+        border-bottom: 1px solid white;
+    }
+    #blog h2{
+        border-bottom: 1px solid white;
+    }
+}
+
+
+/* メディアクエリ640以下 */
+
+
+
+
