@@ -13,4 +13,10 @@ $(function(){
        }
     });
   });
+
+  const hum = $('.hamburger, .close, #sp-about, #sp-sns, #sp-blog, #sp-contact')
+	const nav = $('.sp-nav')
+	hum.on('click', function(){
+    nav.toggleClass('toggle');
+  });
 });
