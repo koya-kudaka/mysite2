@@ -262,6 +262,7 @@ footer{
 #about h2{
     margin-bottom: 50px;
     width: 100%;
+    letter-spacing: 4px;
 }
 
 .about_text{
@@ -287,6 +288,7 @@ footer{
 #sns h2{
     margin: 40px 0;
     width: 100%;
+    letter-spacing: 4px;
 }
 
 .card{
@@ -359,6 +361,7 @@ footer{
 #blog h2{
     padding-top: 30px;
     width: 100%;
+    letter-spacing: 4px;
 }
 
 #blog p{
@@ -447,16 +450,14 @@ a.button:hover {
   display: none;
 }
 
-#contact h1 {
+#contact h2 {
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
   border-bottom: 2px solid #c3c3c3;
   background-color: black;
-  box-shadow: 0px 0px 100px rgba(0,0,0,0.05);
   color: white;
   font-weight: 300;
-  width: 300px;
   padding: 10px 0px 10px 0px;
   letter-spacing: 4px;
 }
@@ -541,21 +542,29 @@ button#send {
     }
     .container{
         width: 60%;
+        margin: 0 auto;
     }
     #about h2{
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid #c3c3c3;
+        padding: 10px 0px 10px 0px;
+        letter-spacing: 4px;
     }
     #sns h2{
-        border-bottom: 1px solid white;
+        border-bottom: 2px solid #c3c3c3;
+        padding: 10px 0px 10px 0px;
+        letter-spacing: 4px;
     }
     #blog h2{
-        border-bottom: 1px solid white;
+        border-bottom: 2px solid #c3c3c3;
+        padding: 10px 0px 10px 0px;
+        letter-spacing: 4px;
     }
 }
 
 
 /* メディアクエリ640以下 */
 @media screen and (max-width:640px){
+
     .pc-nav{
         display: none;
     }
